@@ -18,8 +18,8 @@
  * Authors: Jakob Sinclair <sinclair.jakob@openmailbox.org>
  */
 
-extern crate dm_tool;
+extern crate dm_lib;
 
 fn main() {
-        println!("Hello world!");
+    println!("Hello world!");
 }
