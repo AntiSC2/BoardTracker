@@ -1,5 +1,5 @@
 /*
- *  DM-Tool
+ *  DM-lib
  *  Copyright (C) 2016 Jakob Sinclair
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,9 +17,3 @@
  *
  * Authors: Jakob Sinclair <sinclair.jakob@openmailbox.org>
  */
-
-extern crate dm_tool;
-
-fn main() {
-        println!("Hello world!");
-}

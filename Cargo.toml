@@ -1,6 +1,6 @@
 [package]
-name = "DM-Tool"
+name = "dm_tool"
 version = "0.1.0"
-authors = ["antisc2 <jakob.sinclair99@gmail.com>"]
+authors = ["Jakob Sinclair <sinclair.jakob@openmailbox.org>"]
 
 [dependencies]
