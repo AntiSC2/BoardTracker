@@ -18,10 +18,26 @@
  * Authors: Jakob Sinclair <sinclair.jakob@openmailbox.org>
  */
 
-pub mod statistics;
+use entity::statistics::Statistics;
 
 pub struct Player {
-    pub hp: i32,
-    pub max_hp: i32,
-    pub stats: statistics,
+    pub stats: Statistics,
+}
+
+impl Player {
+    pub fn new(x: i32) -> Player {
+        Player {
+            stats: Statistics {
+                hp: x,
+                max_hp: x,
+
+                strenght: x,
+                dexterity: x,
+                constitution: x,
+                intelligence: x,
+                wisdom: x,
+                charisma: x,
+            }
+        }
+    }
 }

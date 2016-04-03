@@ -17,3 +17,15 @@
  *
  * Authors: Jakob Sinclair <sinclair.jakob@openmailbox.org>
  */
+
+pub struct Statistics {
+    pub hp: i32,
+    pub max_hp: i32,
+
+    pub strenght: i32,
+    pub dexterity: i32,
+    pub constitution: i32,
+    pub intelligence: i32,
+    pub wisdom: i32,
+    pub charisma: i32,
+}

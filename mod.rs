@@ -17,5 +17,3 @@
  *
  * Authors: Jakob Sinclair <sinclair.jakob@openmailbox.org>
  */
-
-pub mod entity;

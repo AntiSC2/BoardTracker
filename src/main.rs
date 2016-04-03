@@ -20,9 +20,9 @@
 
 extern crate dm_lib;
 
-use dm_lib::player;
+use dm_lib::entity::player::*;
 
 fn main() {
-    let player1 = player::Player{hp: 10, max_hp: 20};
+    let player1 = Player::new(0);
     println!("Hello world!");
 }
