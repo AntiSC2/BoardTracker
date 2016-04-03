@@ -1,5 +1,5 @@
 /*
- *  DM-lib
+ *  DM-Tool
  *  Copyright (C) 2016 Jakob Sinclair
  *
  * This program is free software: you can redistribute it and/or modify
@@ -17,3 +17,12 @@
  *
  * Authors: Jakob Sinclair <sinclair.jakob@openmailbox.org>
  */
+
+extern crate dm_lib;
+
+use dm_lib::player;
+
+fn main() {
+    let player1 = player::Player{hp: 10, max_hp: 20};
+    println!("Hello world!");
+}

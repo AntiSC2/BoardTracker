@@ -18,5 +18,10 @@
  * Authors: Jakob Sinclair <sinclair.jakob@openmailbox.org>
  */
 
-pub mod entity;
-pub mod io;
+pub mod statistics;
+
+pub struct Player {
+    pub hp: i32,
+    pub max_hp: i32,
+    pub stats: statistics,
+}
