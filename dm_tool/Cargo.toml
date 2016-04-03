@@ -1,6 +1,0 @@
-[package]
-name = "dm_tool"
-version = "0.1.0"
-authors = ["Jakob Sinclair <sinclair.jakob@openmailbox.org>"]
-
-[dependencies]
