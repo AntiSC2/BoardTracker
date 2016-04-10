@@ -1,4 +1,4 @@
-# DM-Tool
+# BoardTracker
 A tool for Dungeon masters to help them keep track of their fantasy world.
 
 #License

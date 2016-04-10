@@ -1,5 +1,5 @@
 /*
- *  DM-Tool
+ *  BoardTracker
  *  Copyright (C) 2016 Jakob Sinclair
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,9 +18,9 @@
  * Authors: Jakob Sinclair <sinclair.jakob@openmailbox.org>
  */
 
-extern crate dm_lib;
+extern crate bt_lib;
 
-use dm_lib::entity::player::*;
+use bt_lib::entity::player::*;
 
 fn main() {
     let player1 = Player::new(0);

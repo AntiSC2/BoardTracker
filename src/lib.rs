@@ -1,5 +1,5 @@
 /*
- *  DM-lib
+ *  BoardTracker
  *  Copyright (C) 2016 Jakob Sinclair
  *
  * This program is free software: you can redistribute it and/or modify
