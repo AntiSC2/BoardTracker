@@ -1,8 +1,9 @@
-[package]
-name = "board_tracker"
+[project]
+name = "bt_lib"
 version = "0.1.0"
 license = "GPLv3"
 authors = ["Jakob Sinclair <sinclair.jakob@openmailbox.org>"]
 
-[dependencies]
-bt_lib = {path = "lib/", version = "0.1"}
+[lib]
+name = "bt_lib"
+path = "src/lib.rs"
