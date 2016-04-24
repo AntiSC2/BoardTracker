@@ -19,6 +19,7 @@
  */
 
 #[macro_use] extern crate conrod;
+extern crate find_folder;
 extern crate piston_window;
 extern crate bt_lib;
 
@@ -49,6 +50,7 @@ use conrod::{
 use piston_window::{EventLoop, Glyphs, PistonWindow, UpdateEvent, 
                     WindowSettings};
 use bt_lib::entity::player::*;
+use std::sync::mpsc;
 
 type Backend = (<piston_window::G2d<'static> as conrod::Graphics>::Texture, Glyphs);
 type Ui = conrod::Ui<Backend>;
@@ -59,10 +61,20 @@ fn main() {
         WindowSettings::new("Board Tracker", [1280, 720])
             .exit_on_esc(true).vsync(true).samples(4).build().unwrap();
 
+    let mut ui = {
+        let assets = find_folder::Search::KidsThenParents(3, 5)
+            .for_folder("assets").unwrap();
+        let font_path = assets.join("fonts/TypeWriter.ttf");
+        let theme = Theme::default();
+        let glyph_cache = Glyphs::new(&font_path, window.factory.clone());
+        Ui::new(glyph_cache.unwrap(), theme)
+    };
+
     window.set_ups(60);
     let player1 = Player::new(0);
     while let Some(event) = window.next() {
-        
+        ui.handle_event(&event);
+        window.draw_2d(&event, |c, g| ui.draw_if_changed(c, g));
     }
     println!("Hello world!");
 }
